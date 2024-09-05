@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Project with iframes</title>
+    <style>
+        .scrollable-container {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow-y: scroll; /* Adds vertical scrollbar */
+        }
+
+        .content {
+            height: 600px; /* Content taller than the container to demonstrate scrolling */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Project: Embedding Content with iframes</h1>
+
+    <!-- Embed Local HTML Content -->
+    <h2>Local Content</h2>
+    <div class="scrollable-container">
+        <div class="content">
+          <h3>Welcome to Geekster</h3>
+          <p>This content is displayed from a local HTML file using an iframe. Similarly you can craete different sizes of windows using iframes in HTML</p>
+        </div>
+    </div>
+    <!-- Replace 'localfile.html' with the name of your local HTML file -->
+
+    <!-- Embed an External Website -->
+    <h2>External Website</h2>
+    <iframe src="https://www.geekster.in/" width="600" height="600" style="border:none;">
+    </iframe>
+    
+    <!-- Embed a YouTube Video -->
+    <h2>YouTube Video</h2>
+    <video controls>
+        <source src="video.mp4" height="150px" weight="150px">
+    </video>
+    <!-- Replace 'VIDEO_ID' with the actual ID of the YouTube video -->
+
+</body>
+</html>
